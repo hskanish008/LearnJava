@@ -14,5 +14,10 @@ public class WideningAndNarrowCasting {
 
         System.out.println(mYdouble);
         System.out.println(mYint);
+
+        int maxscore=500;
+        int userscore=423;
+        double percentage=(double) userscore/maxscore*100.00d;
+        System.out.println(percentage);
     }
 }
