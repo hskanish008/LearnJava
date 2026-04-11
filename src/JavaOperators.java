@@ -63,12 +63,13 @@ public class JavaOperators {
 //        System.out.println(x>y);
 //        System.out.println(x>=y);
 
-        int age=18;
-        System.out.println(age>=18);
+//        int age=18;
+//        System.out.println(age>=18);
+//
+//        int passwordlength=5;
+//        System.out.println(passwordlength>=8);
+//        System.out.println(passwordlength<8);
 
-        int passwordlength=5;
-        System.out.println(passwordlength>=8);
-        System.out.println(passwordlength<8);
 
 
 
