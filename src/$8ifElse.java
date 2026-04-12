@@ -1,3 +1,5 @@
+
+
 public class $8ifElse{
  public static void main(String args[])
  {
@@ -57,9 +59,80 @@ if(isRaining)
      if(first1<second2)
         {
             System.out.println("Use always curly braces in if statement");
-            System.out.println("This will also run in if stement because of curly braces");
+            System.out.println("This will also run because if statement because of curly braces");
         }   
         System.out.println("This will works because it is outside from braces if condition met or not");
+
+        
+        
+//      -----The Else statement----
+//      The else statement lets you run a block of code when the condition in the if statement is false
+
+//      Think of it like real life: If it rains, bring an umbrella. Otherwise (else), go outside without one:
+
+        boolean iisRaining=false;
+        if(iisRaining)
+        {
+            System.out.println("You need umbrella because of Raining");
+
+        }
+        else
+        {
+            System.out.println("There is no raining going on you can go without umbrella");
+        }
+
+
+        int time = 20;
+
+        if (time < 18) 
+        {
+            System.out.println("Good day.");
+        } else 
+        {
+            System.out.println("Good evening.");
+        }
+//      Outputs "Good evening."
+           
+
+
+//       ----The else if statement----
+//       Use the else if statement to specify a new condition to test if the the first condition is false
+
+//       Think of it like real life: If it rains, bring an umbrella. Else if it is sunny, wear sunglasses. Else, just go outside normally
+          
+         int weather=16;
+         
+         if(weather==1)
+         {
+            System.out.println("It is raining outside");
+         }
+         else if(weather==2)
+         {
+            System.out.println("Wear sunglasses");
+         }
+         else
+         {
+            System.out.println("Just go outside normally");
+         }
+
+
+
+
+//      ----Shortest hand if....else----
+//      variable=(condition)? expressionTrue : expressionFalse
+        
+        int time1=16;
+        String result=(time1<=18)? "Good day": "Good night";
+        System.out.println(result);
+
+
+        
+
+
+
+
+
+
 
     }
 
