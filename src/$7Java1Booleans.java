@@ -18,10 +18,29 @@ public class $7Java1Booleans {
 
 
 //        Let's use booleans in a real-life example where we want to find out if a person is old enough to vote.
-
+      
         int validAge=18;
-        int myAge=14;
+        int myAge=19;
         System.out.println(myAge<=validAge);
+
+        if(validAge<=myAge)
+        {
+            System.out.println("You are valid to vote");
+        }
+        else
+        {
+            System.out.println("You are not eligible to vote");
+
+        }
+        
+       if(67>34)
+       {
+        System.out.println("67 is greater than 18");
+       }
+       
+       
+
+        
 
     }
 
