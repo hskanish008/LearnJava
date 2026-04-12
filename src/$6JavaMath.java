@@ -1,4 +1,4 @@
-public class JavaMath {
+public class $6JavaMath {
     public static void main(String args[])
     {
 //        The Math.max(x,y) method can be used to find the highest value of x and y

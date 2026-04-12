@@ -1,4 +1,4 @@
-public class JavaOperators {
+public class $3JavaOperators {
     public static void main(String args[])
     {
 

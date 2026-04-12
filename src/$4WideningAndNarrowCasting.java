@@ -1,4 +1,4 @@
-public class WideningAndNarrowCasting {
+public class $4WideningAndNarrowCasting {
     public static void main(String args[])
     {
         //Widening casting

@@ -1,4 +1,4 @@
-public class dataTypes {
+public class $2dataTypes {
     public static void main(String args[])
     {
         var mynum=10;

@@ -1,4 +1,4 @@
-public class JavaStrings {
+public class $5JavaStrings {
     public static void main(String args[])
     {
 //   ---How to use strings Methods---
