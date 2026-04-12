@@ -4,6 +4,7 @@ public class JavaStrings {
 //   ---How to use strings Methods---
 
         String greeting="Hritik sharma";
+        System.out.println(greeting.length());
         System.out.println(greeting.toUpperCase()); //toUpperCase() method converts a string to upper case letters
         System.out.println(greeting.toLowerCase()); //toLowerCase() method converts a string to lower case letters
 
@@ -82,7 +83,7 @@ public class JavaStrings {
 
         String specialCharacter="Hey guys \nmy name is cha muh hi \tand i am telling my \bstory about how this situation works with different people";
         System.out.println(specialCharacter);
-//
+
 
 
 
