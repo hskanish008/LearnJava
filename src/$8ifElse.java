@@ -128,7 +128,10 @@ if(isRaining)
         int age=17;
         String eligibleAge=(age<18)?"Person is not eligible for vote":"Person is  eligible for voter";
         System.out.println(eligibleAge);
-    
+
+        int personTime=11;
+        String clockTime=(personTime<12)?"Good morning":(personTime<18)?"Good afternoon":"Good night";
+         System.out.println(clockTime);
 
 
 
