@@ -129,9 +129,39 @@ if(isRaining)
         String eligibleAge=(age<18)?"Person is not eligible for vote":"Person is  eligible for voter";
         System.out.println(eligibleAge);
 
+//      ----Nested Ternary----
+//    You can nest ternary operators to handle more than two possible outcomes.but this can make you code harder to read
         int personTime=11;
         String clockTime=(personTime<12)?"Good morning":(personTime<18)?"Good afternoon":"Good night";
          System.out.println(clockTime);
+
+
+         int xx = 15;
+          int yy = 25;
+
+if (xx > 10) {
+  System.out.println("x is greater than 10");
+  
+  // Nested if 
+  if (yy > 20) {
+    System.out.println("y is also greater than 20");
+  }
+}
+
+int aage = 20;
+boolean isCitizen = true;
+
+if (aage >= 18) {
+  System.out.println("Old enough to vote.");
+  
+  if (isCitizen) {
+    System.out.println("And you are a citizen, so you can vote!");
+  } else {
+    System.out.println("But you must be a citizen to vote.");
+  }
+} else {
+  System.out.println("Not old enough to vote.");
+}
 
 
 
