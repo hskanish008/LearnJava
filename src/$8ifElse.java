@@ -46,17 +46,12 @@ if(isRaining)
 //   Without braces, only the first line after the if belongs to it,any other 
 //   Line will run no matter what, which can lead to unexpected results
 
-     int  first1=34;
-     int  second2=56;
-
-     if(first1>second2)
-        System.out.println("x is greater than y");
-        System.out.println("This line runs no matter what not part of the if statement");
-
-        
+     
 //  To avoid mistakes, always use curly braces { }. This makes it clear which lines belong to the if statement: 
-  
-     if(first1<second2)
+  int first1=10;
+  int second2=20;
+
+     if( first1<second2)
         {
             System.out.println("Use always curly braces in if statement");
             System.out.println("This will also run because if statement because of curly braces");
