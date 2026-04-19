@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class $8ifElse{
  public static void main(String args[])
  {
@@ -209,6 +209,7 @@ if(isRaining)
       }
 
 
+
 //      In real programs, logical operators are often used for access control. For example, to get access to a system, there are specific requirements:
 //      You must be logged in, and then you either need to be an admin, or have a high security clearance (level 1 or 2):
 
@@ -226,7 +227,92 @@ if(isRaining)
          }
 
 
-         
+
+//   This example shows how you can use if..else to "open a door" if the user enters the correct code:
+   
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter the code for opening door (108108 correct code) = ");
+     int doorstep=sc.nextInt();
+     if(doorstep==108108)
+     {
+      System.out.println("Correct code. Now the door is open.");
+     }
+     else
+     {
+      System.out.println("Incorrect code. The door remains closed.");
+     }
+
+
+
+
+//  This example shows how you can use if..else to find out if a number is positive or negative:     
+    
+     System.out.print("Enter the no to find that the no is positive or negative = ");
+     int myNum=sc.nextInt();
+     if(myNum>0)
+     {
+      System.out.println("The no is positive");
+     }
+     else if(myNum<0)
+     {
+      System.out.println("The no is negative");
+     }
+     else 
+     {
+      System.out.println("The no is zero ");
+     } 
+    
+     
+
+//   Find out if a person is old enough to vote:
+
+     System.out.print("Enter the no to find you are eligible for vote = ");
+     int votingAge=18;
+     int myAge=sc.nextInt();
+     if(myAge>=votingAge)
+     {
+      System.out.println("The person is eligible for vote");
+     }
+     else
+     {
+      System.out.println("The person is not eligible for vote");
+     }
+
+
+
+//    Find out if a number is even or odd
+    System.out.print("Enter the number to find even or odd= ");
+    int evenOdd=sc.nextInt();
+    if(evenOdd%2==0)
+    {
+      System.out.println(+evenOdd+" is a even number");
+    }
+    else
+    {
+      System.out.println(+evenOdd+" is a odd number");
+    }
+
+
+
+//    Check temperture:
+      System.out.print("Enter the no to find the weather is cold =");
+      int temperature=sc.nextInt();
+      if(temperature<0)
+        {
+          System.out.println("The temperature is freezing");
+        }  
+        else if(temperature<20)
+        {
+          System.out.println("The temperature is cold");
+        }  
+        else 
+        {
+          System.out.println("The temperature is warm");
+        }
+
+
+
+
 
 
 
