@@ -1,5 +1,4 @@
 
-
 public class $8ifElse{
  public static void main(String args[])
  {
@@ -195,6 +194,36 @@ if(isRaining)
         System.out.println("A is greater than B and C is greater than B");
       }
 
+      int logicalAA=200;
+      int logicalBB=140;
+      int logicalCC=300;
+
+      if(logicalAA>logicalBB || logicalAA>logicalCC)
+      {
+          System.out.println("At least one condition is true");
+      }
+
+      if(!(logicalBB>logicalCC))
+      {
+        System.out.println("B is not greater than c");
+      }
+
+
+//      In real programs, logical operators are often used for access control. For example, to get access to a system, there are specific requirements:
+//      You must be logged in, and then you either need to be an admin, or have a high security clearance (level 1 or 2):
+
+         boolean isLoggedin=true;
+         boolean isAdmin=false;
+         int securityLevel=2;
+
+         if(isLoggedin && (isAdmin || securityLevel<=2))
+         {
+          System.out.println("Access Granted");
+         }
+         else
+         {
+          System.out.println("Access denied");
+         }
 
 
          
