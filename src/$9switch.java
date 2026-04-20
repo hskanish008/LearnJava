@@ -20,6 +20,16 @@ public class $9switch {
     code block 
 */
 
+/*      ----The break Keyword-----
+        When Java reaches a break keyword, it breaks out of the switch block.
+        This will stop the execution of more code and case testing inside the block.
+        When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+       
+
+        ----The default keyword----
+        The default keyword specifies some code to run if there is no case match 
+ */
+
         switch(day)
         {
            case 1:
@@ -67,6 +77,8 @@ public class $9switch {
        default:
         System.out.println("Invalid choice");
     }
+
+
          
         
         
