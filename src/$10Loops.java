@@ -5,7 +5,6 @@ public class $10Loops {
 /*
   A loop is a programming construct that repeats a block of code multiple times until a condition is met.
   Loops can execute a block of code as long as specified is true.
-  A loop is a programming construct that repeats a block of code multiple times until a condition is met.
   Loops are handy because they save time, reduce error and they make code more readable.
   Loops are programming control flow structures that enable the repeated execution of a set of instructions until a specified condition is met.
   They are essential for automating repetitive tasks, enhancing code efficiency, and improving readability by preventing manual repetition.
@@ -15,10 +14,7 @@ public class $10Loops {
          Scanner sc=new Scanner(System.in);
          System.out.print("Enter the total no to print = ");
          int loopNum=sc.nextInt();
-        // for(int i=0;i<=loopNum;i++)
-        // {
-        //     System.out.println("The no is ="+i);
-        // }
+        
 
 
 
@@ -68,7 +64,52 @@ public class $10Loops {
     // }
  
 
-    // ----Break continue----
+    //  do 
+    //  {
+    //   System.out.println("The no is = "+loopNum);
+    //   loopNum++;
+    //  }
+    //  while(loopNum<10);
+
+
+//   To demonstrate a practical example of the while loop combined with an if else statement, let's say we play a game of Yatzy:
+  
+    // while(loopNum<=6)
+    // {
+    //     if(loopNum<6)
+    //     {
+    //         System.out.println("Not yatchy");
+    //     }
+    //     else
+    //     {
+    //         System.out.println("yatchy");
+    //     }
+    //     loopNum+=1;
+    // }
+
+
+//               ----For loop----
+//               When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+    
+    /*
+                 for (statement 1; statement 2; statement 3) 
+                 {
+                 // code block to be executed
+                }
+
+        Statement 1 is executed (one time) before the execution of the code block.
+        Statement 2 defines the condition for executing the code block.
+        Statement 3 is executed (every time) after the code block has been executed.
+     */
+
+
+        // for(int i=0;i<=loopNum;i++)
+        // {
+        //     System.out.println("The no is ="+i);
+        // }
+        
+
+//               ----Break continue----
     //  for(int i=0;i<=loopNum;i++)
     //  {
     //   if(i==3)
@@ -77,6 +118,30 @@ public class $10Loops {
     //   break;
     //   System.out.println(i);
     //  }
+
+    
+//             Even Numbers
+
+    //   for(int i=0;i<=loopNum;i+=2)
+    //   {
+    //     System.out.println("The  even numbers are = "+i);
+        
+    //   }
+
+//            Odd Numbers
+      
+      for(int i=1;i<=loopNum;i+=2)
+      {
+        System.out.println("The odd numbers are= "+i);
+      }
+
+
+
+   
+  
+  
+  
+
 
 
 
