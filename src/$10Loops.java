@@ -130,10 +130,82 @@ public class $10Loops {
 
 //            Odd Numbers
       
-      for(int i=1;i<=loopNum;i+=2)
-      {
-        System.out.println("The odd numbers are= "+i);
-      }
+    //   for(int i=1;i<=loopNum;i+=2)
+    //   {
+    //     System.out.println("The odd numbers are= "+i);
+    //   }
+
+//       This example calculates the sum of numbers from 1 to 5:
+          
+        //  for(int i=0;i<=loopNum;i++)
+        //  {
+        //      sum+=i;      
+        //  }
+        //  System.out.println("Sum = " + sum);
+
+
+      
+/*
+            ----Nested Loops----
+It is also possible to place a loop inside another loop. This is called a nested loop.
+The "inner loop" will be executed one time for each iteration of the "outer loop":
+ */
+        //outer loop
+    //    for(int i=1;i<=loopNum;i++)
+    //    {
+    //     System.out.println("Outer space ="+i);
+         
+    //     inner loop 
+    //     for(int j=1;j<=5;j++)
+    //     {
+    //         System.out.println("  Inner space = "+j);
+    //     }
+    //    }
+
+    // how to print a table 
+    
+    // for (int i=1;i<=10;i++)
+    // {
+    //     System.out.println(loopNum+" * "+ i +" = "+ (loopNum*i));
+    // }
+
+    // String[] cars= {"Astin Martin","Ferrari","Lamborgini","Bently","Porshe"};
+    //      for(String car:cars)
+    //      {  
+    //         System.out.println(car);
+    //      }
+
+    //    int[] num= {1,2,3,4,5,6,7,8,9,10};
+    //    for(int intNum : num)
+    //    {
+    //     System.out.println(intNum);
+    //    }
+
+    int factorial=1;
+    for(int i=1;i<=loopNum;i++)
+    {
+        factorial*=i;
+    }
+    System.out.println("The factorial of this number = "+factorial);
+    
+
+    
+
+
+   
+
+
+
+
+
+
+
+
+         
+
+ 
+
+
 
 
 
