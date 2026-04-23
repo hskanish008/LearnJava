@@ -180,13 +180,74 @@ The "inner loop" will be executed one time for each iteration of the "outer loop
     //    {
     //     System.out.println(intNum);
     //    }
+      
+//       -----Factorial-----
+    // int factorial=1;
+    // for(int i=1;i<=loopNum;i++)
+    // {
+    //     factorial*=i;
+    // }
+    // System.out.println("The factorial of this number = "+factorial);
+    
+    // int[] numbers={1,2,3,4,5,6,7};
+    // for(int numb=1;numb<numbers.length;numb++)
+    // {
+    //     System.out.println("The numbers are :"+numbers[numb]);
+    // }
 
-    int factorial=1;
-    for(int i=1;i<=loopNum;i++)
-    {
-        factorial*=i;
-    }
-    System.out.println("The factorial of this number = "+factorial);
+/*
+         ----Combining Break and Continue----
+
+         You can also combine break and continue.
+         This example skips printing 2 and stops the loop at 4:
+*/
+    // for(int i=1;i<=loopNum;i++)
+    // {
+    //     if(i==2)
+    //     { 
+    //         continue;   
+    //     }
+    //     if(i==10)
+    //     {
+    //        break;
+    //     }
+    //     System.out.println("The no is = "+i);
+           
+
+    // }
+
+
+    // int[] numbers={5,6,-1,4,-7,2,1,0,3,8,9};
+     
+    // for(int numb : numbers)
+    // {
+    //     if(numb<0)
+
+    //     {
+    //         continue;
+    //     }
+    //     if(numb==0)
+    //     {
+    //         break;
+    //     }
+    //     System.out.println("The no are = "+numb);
+
+    // }
+
+
+    int[] numbers={5,6,-1,4,-7,2,1,0,3,8,9};
+    
+    // for(int num=0;num<numbers.length;num++)
+    // {
+    //     if(numbers[num]<=0)
+    //     {
+    //         continue;
+    //     }
+        
+    //     System.out.println("The no are : "+numbers[num]);
+    // }
+    
+
     
 
     
