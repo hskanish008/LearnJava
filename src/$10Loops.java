@@ -235,7 +235,7 @@ The "inner loop" will be executed one time for each iteration of the "outer loop
     // }
 
 
-    int[] numbers={5,6,-1,4,-7,2,1,0,3,8,9};
+    // int[] numbers={5,6,-1,4,-7,2,1,0,3,8,9};
     
     // for(int num=0;num<numbers.length;num++)
     // {
