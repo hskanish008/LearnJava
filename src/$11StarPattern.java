@@ -215,6 +215,8 @@ public class $11StarPattern {
             //     System.out.println();
             //    }
 
+
+
 /*              ----Tenth Pattern----
   
     *
@@ -224,18 +226,119 @@ public class $11StarPattern {
 *********              
             
 */
-             for(int row=1;row<=starNum;row++)
-            {
-             for(int col=1;col<=starNum-row;col++)
-             {
-             System.out.print(" ");
-             }
-             for(int pat=1;pat<=2*row-1;pat++)
-             {
-                System.out.print("*");
-             }
-             System.out.println();
-            }
+            //  for(int row=1;row<=starNum;row++)
+            // {
+            //  for(int col=1;col<=starNum-row;col++)
+            //  {
+            //  System.out.print(" ");
+            //  }
+            //  for(int pat=1;pat<=2*row-1;pat++)
+            //  {
+            //     System.out.print("*");
+            //  }
+            //  System.out.println();
+            // }
+
+
+
+/*              ----Tenth Pattern----
+  
+    *
+   ***
+  *****
+ *******
+*********       
+
+     differenet col method
+            
+*/
+    //        for(int row=1;row<=starNum;row++)
+    //  {
+    //   for(int col=starNum;col>row;col--)
+    //  {
+    //   System.out.print(" ");
+    //   }
+    //   for(int pattern=1;pattern<=2*row-1;pattern++)
+    //   {
+    //     System.out.print("*");
+    //   }
+    //   System.out.println();
+    //  }
+
+
+
+/*              ----Eleven Pattern----
+  
+*********
+ *******
+  *****
+   ***
+    *     
+    
+*/ 
+         
+    //  for(int row=1;row<=starNum;row++)
+    //  {
+    //  for(int col=1;col<row;col++)
+    //  {
+    //  System.out.print(" ");
+    //  }
+     
+    //  for(int pattern=1;pattern<=2*starNum-2*row+1;pattern++)
+    //  {
+    //   System.out.print("*");
+    //  }
+     
+    //  System.out.println();
+    //  }
+
+
+         
+/*              ----Twelve Pattern----
+  
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *      
+*/ 
+        //  ---  one method---
+// for(int row=1;row<=starNum;row++)
+// {
+//     for(int col=row;col<starNum;col++)
+//     {
+//           System.out.print(" ");
+//     }
+//     for(int pattern=1;pattern<=2*row-1;pattern++)
+//     {
+//         System.out.print("*");
+//     }
+//     System.out.println();
+// }
+// for(int row=1;row<=starNum;row++)
+// {
+//     for(int col=1;col<row;col++)
+//     {
+//           System.out.print(" ");
+//     }
+//     for(int pattern=1;pattern<=2*starNum-2*row+1;pattern++)
+//     {
+//         System.out.print("*");
+//     }
+//     System.out.println();
+// }
+
+
+/*
+                   
+
+ */
+
 
 
 
