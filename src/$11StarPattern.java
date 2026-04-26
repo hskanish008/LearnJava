@@ -443,26 +443,82 @@ G H I J
     //             }
 
 
-/*              ----Sixteen Pattern----
+/*              ----Seventeen Pattern----
   
-A 
-B C 
-D E F 
-G H I J 
+A B C D E 
+A B C D 
+A B C 
+A B 
+A  
           
                 
 */ 
         
-              for(int row=1;row<=starNum;row++)
-              {
-                char a= 'A';
-               for(int col=starNum;col>=row;col--)
-               {
-               System.out.print(a +" ");
-               a++;
-               }
-               System.out.println();
-              }
+            //   for(int row=1;row<=starNum;row++)
+            //   {
+            //     char a= 'A';
+            //    for(int col=starNum;col>=row;col--)
+            //    {
+            //    System.out.print(a +" ");
+            //    a++;
+            //    }
+            //    System.out.println();
+            //   }
+
+
+
+/*              ----Eighteen Pattern----
+   
+A 
+B B 
+C C C 
+D D D D 
+E E E E E 
+
+*/ 
+        //    char a='A';
+        //    for(int row=1;row<=starNum;row++)
+        //    {
+        //     for(int col=1;col<=row;col++)
+        //     {
+        //      System.out.print(a + " ");
+        //     }
+        //     a++;
+        //     System.out.println();
+        //    }
+
+
+
+
+/*               ----Nineteen Pattern----
+
+ 
+
+
+*/ 
+for(int row=1;row<=starNum;row++)
+       {
+           for(int col=row;col<starNum;col++)
+           {
+               System.out.print(" ");
+           }
+          char a='A';
+          for(int col=1;col<=row;col++)
+          {
+              System.out.print(a);
+              a++;
+               
+          }
+         char b=(char)('A'+row-2);
+         for(int col=2;col<=row;col++)
+         {
+             System.out.print(b);
+             b--;
+         }
+           System.out.println();    
+          }
+              
+    
 
 
 
