@@ -334,10 +334,142 @@ public class $11StarPattern {
 // }
 
 
-/*
-                   
 
- */
+/*              ----Thirteen Pattern----
+  
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+
+*/ 
+                   
+ // for(int row=1;row<=starNum;row++)
+// {
+// for(int col=1;col<=row;col++)
+// {
+// System.out.print("*");
+// }
+// System.out.println();
+// }
+// starNum--;
+// for(int row=1;row<=starNum;row++)
+// {
+// for(int col=row;col<=starNum;col++)
+// {
+// System.out.print("*");
+// }
+// System.out.println();
+// }
+
+
+
+/*              ----Fourteen Pattern----
+  
+1
+01
+101
+0101
+10101
+
+
+*/ 
+
+//    for(int row=1;row<=starNum;row++)
+//     {
+//         for(int col=1;col<=row;col++)
+//     {
+//         if((row+col)%2==0)
+//         {
+//         System.out.print("1");
+//         }
+//         else
+//         {
+//         System.out.print("0");
+//         }    
+//          }
+//         System.out.println();
+//     }
+
+
+/*              ----Fifteen Pattern----
+  
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+
+*/ 
+        
+    //  int num=1;
+    //  for(int row=1;row<=starNum;row++)
+    //  {
+    //     for(int col=1;col<=row;col++)
+    //     {
+    //         System.out.print(num +" ");
+    //         num++;
+    //     }
+    //     System.out.println();
+    //  }
+
+
+
+/*              ----Sixteen Pattern----
+  
+A 
+B C 
+D E F 
+G H I J 
+                
+*/ 
+              
+    //    char a = 'A';
+    //             for(int row=1;row<=starNum;row++)
+    //             { 
+    //              for(int col=1;col<=row;col++)
+    //              {
+    //              System.out.print(a +" ");
+    //              a++;
+    //              }
+    //              System.out.println();
+    //             }
+
+
+/*              ----Sixteen Pattern----
+  
+A 
+B C 
+D E F 
+G H I J 
+          
+                
+*/ 
+        
+              for(int row=1;row<=starNum;row++)
+              {
+                char a= 'A';
+               for(int col=starNum;col>=row;col--)
+               {
+               System.out.print(a +" ");
+               a++;
+               }
+               System.out.println();
+              }
+
+
+
+
+ 
+
+ 
 
 
 

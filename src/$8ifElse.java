@@ -1,4 +1,5 @@
-import java.util.Scanner;
+
+
 public class $8ifElse{
  public static void main(String args[])
  {
@@ -47,10 +48,8 @@ if(isRaining)
 
      
 //  To avoid mistakes, always use curly braces { }. This makes it clear which lines belong to the if statement: 
-  int first1=10;
-  int second2=20;
-
-     if( first1<second2)
+  
+     if(first1<second2)
         {
             System.out.println("Use always curly braces in if statement");
             System.out.println("This will also run because if statement because of curly braces");
@@ -125,193 +124,57 @@ if(isRaining)
 
 //      ----Nested Ternary----
 //    You can nest ternary operators to handle more than two possible outcomes.but this can make you code harder to read
-        int Nestedtime=17;
-        String message=(Nestedtime<12)?"Good morning":(Nestedtime<18)?"Good evening":"Good night";
-        System.out.println(message); 
+        int personTime=11;
+        String clockTime=(personTime<12)?"Good morning":(personTime<18)?"Good afternoon":"Good night";
+         System.out.println(clockTime);
 
 
+         int xx = 15;
+          int yy = 25;
 
-//      ----Java Nested if ----
-//      You can also place an if statement inside another if.This is called a nested if statement 
-//      A nested if let you check for a condition only if another condition is already true
+if (xx > 10) {
+  System.out.println("x is greater than 10");
+  
+  // Nested if 
+  if (yy > 20) {
+    System.out.println("y is also greater than 20");
+  }
+}
 
-        int nestedX=15;
-        int nestedY=25;
+int aage = 20;
+boolean isCitizen = true;
 
-        if(nestedX>10)
-        {
-          System.out.println("x is greater than 10");
-
-          if(nestedY>15)
-          {
-            System.out.println("y is greater than 20");
-          }
-        }
-
-
-        int nestedAge=19;
-        boolean isCitizen=false;
-
-        if(nestedAge>=18)
-        {
-          System.out.println("Person is eligible for vote");
-          if(isCitizen)
-          {
-            System.out.println("Person is citizen of india and he can vote here");
-
-          }
-          else
-          {
-            System.out.println("Person is not citizen of india, so he can't vote here");
-          }
-
-        }
-        else
-        {
-          System.out.println("Person is not old enough to vote");
-        }
-        
-        
-//     ----Note----
-//     You can nest as many if statements as you want, but avoid making the code too deep - it can become hard to read.
-//     Nested if is often used together with else and else if for more complex decision making.
+if (aage >= 18) {
+  System.out.println("Old enough to vote.");
+  
+  if (isCitizen) {
+    System.out.println("And you are a citizen, so you can vote!");
+  } else {
+    System.out.println("But you must be a citizen to vote.");
+  }
+} else {
+  System.out.println("Not old enough to vote.");
+}
 
 
-       
-//     -----LOGICAL OPERATORS IN CONDITIONS----
-//     You can combine or reverse condition using logical operators. These work together with if, else and else if to build more complex decision
-//     && (AND) - all conditions must be true
-//     || (OR) - at least one condition must be true
-//     ! (NOT) - reverses a condition (true = false, false = true)
+boolean isLoggedIn = true;
+boolean isAdmin = false;
+int securityLevel = 3; // 1 = highest
 
+if (isLoggedIn && (isAdmin || securityLevel <= 2)) {
+  System.out.println("Access granted");
+} else {
+  System.out.println("Access denied");
+}
 
-       int logicalA=360;
-       int logicalB=256;
-       int logicalC=500;
-
-       if(logicalA>logicalB  &&  logicalC >logicalB)
-      {
-        System.out.println("A is greater than B and C is greater than B");
-      }
-
-      int logicalAA=200;
-      int logicalBB=140;
-      int logicalCC=300;
-
-      if(logicalAA>logicalBB || logicalAA>logicalCC)
-      {
-          System.out.println("At least one condition is true");
-      }
-
-      if(!(logicalBB>logicalCC))
-      {
-        System.out.println("B is not greater than c");
-      }
-
-
-
-//      In real programs, logical operators are often used for access control. For example, to get access to a system, there are specific requirements:
-//      You must be logged in, and then you either need to be an admin, or have a high security clearance (level 1 or 2):
-
-         boolean isLoggedin=true;
-         boolean isAdmin=false;
-         int securityLevel=2;
-
-         if(isLoggedin && (isAdmin || securityLevel<=2))
-         {
-          System.out.println("Access Granted");
-         }
-         else
-         {
-          System.out.println("Access denied");
-         }
-
-
-
-//   This example shows how you can use if..else to "open a door" if the user enters the correct code:
-   
-    Scanner sc=new Scanner(System.in);
-    System.out.print("Enter the code for opening door (108108 correct code) = ");
-     int doorstep=sc.nextInt();
-     if(doorstep==108108)
-     {
-      System.out.println("Correct code. Now the door is open.");
-     }
-     else
-     {
-      System.out.println("Incorrect code. The door remains closed.");
-     }
-
-
-
-
-//  This example shows how you can use if..else to find out if a number is positive or negative:     
-    
-     System.out.print("Enter the no to find that the no is positive or negative = ");
-     int myNum=sc.nextInt();
-     if(myNum>0)
-     {
-      System.out.println("The no is positive");
-     }
-     else if(myNum<0)
-     {
-      System.out.println("The no is negative");
-     }
-     else 
-     {
-      System.out.println("The no is zero ");
-     } 
-    
-     
-
-//   Find out if a person is old enough to vote:
-
-     System.out.print("Enter the no to find you are eligible for vote = ");
-     int votingAge=18;
-     int myAge=sc.nextInt();
-     if(myAge>=votingAge)
-     {
-      System.out.println("The person is eligible for vote");
-     }
-     else
-     {
-      System.out.println("The person is not eligible for vote");
-     }
-
-
-
-//    Find out if a number is even or odd
-    System.out.print("Enter the number to find even or odd= ");
-    int evenOdd=sc.nextInt();
-    if(evenOdd%2==0)
-    {
-      System.out.println(+evenOdd+" is a even number");
-    }
-    else
-    {
-      System.out.println(+evenOdd+" is a odd number");
-    }
-
-
-
-//    Check temperture:
-      System.out.print("Enter the no to find the weather is cold =");
-      int temperature=sc.nextInt();
-      if(temperature<0)
-        {
-          System.out.println("The temperature is freezing");
-        }  
-        else if(temperature<20)
-        {
-          System.out.println("The temperature is cold");
-        }  
-        else 
-        {
-          System.out.println("The temperature is warm");
-        }
-
-
-
+// Try changing securityLevel to test different outcomes:
+//
+// securityLevel 1 = Access granted
+// securityLevel 2 = Access granted
+// securityLevel 3 = Access denied
+// securityLevel 4 = Access denied
+//
+// If isAdmin = true, access is granted.
 
 
 
