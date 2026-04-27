@@ -571,27 +571,56 @@ A B C D E
 
 /*               ----Twenty-Two Pattern----
 
-                 
-        
+*****
+*   *
+*   *
+*   *
+*****              
 
 */
-for(int row=1;row<=starNum;row++)
-                 {
-                  for(int col=1;col<=starNum;col++)
-                  {
-                   if(row==1 || row==starNum || col==1 || col==starNum )
-                   {
-                    System.out.print("*");
-                   }
-                   else
-                   {
-                    System.out.print(" ");
-                   }
+
+
+                // for(int row=1;row<=starNum;row++)
+                //  {
+                //   for(int col=1;col<=starNum;col++)
+                //   {
+                //    if(row==1 || row==starNum || col==1 || col==starNum )
+                //    {
+                //     System.out.print("*");
+                //    }
+                //    else
+                //    {
+                //     System.out.print(" ");
+                //    }
                    
-                  }
-                  System.out.println();
-                 }
+                //   }
+                //   System.out.println();
+                //  }
     
+
+
+/*               ----Twenty-Three Pattern----
+
+              
+
+*/
+  
+        int num=1;
+        
+       for(int row=1;row<=starNum;row++)
+       {
+           
+          for(int col=row;col<=row;col++)
+          {
+              
+              System.out.print(num);
+              num*=11;
+          }
+          System.out.println();
+       }
+
+
+
 
  
 
