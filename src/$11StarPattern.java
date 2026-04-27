@@ -492,36 +492,106 @@ E E E E E
 
 /*               ----Nineteen Pattern----
 
+   A
+  ABA
+ ABCBA
+ABCDCBA
  
 
 
 */ 
-for(int row=1;row<=starNum;row++)
-       {
-           for(int col=row;col<starNum;col++)
-           {
-               System.out.print(" ");
-           }
-          char a='A';
-          for(int col=1;col<=row;col++)
-          {
-              System.out.print(a);
-              a++;
+// for(int row=1;row<=starNum;row++)
+//        {
+//            for(int col=row;col<starNum;col++)
+//            {
+//                System.out.print(" ");
+//            }
+//           char a='A';
+//           for(int col=1;col<=row;col++)
+//           {
+//               System.out.print(a);
+//               a++;
                
-          }
-         char b=(char)('A'+row-2);
-         for(int col=2;col<=row;col++)
-         {
-             System.out.print(b);
-             b--;
-         }
-           System.out.println();    
-          }
+//           }
+//          char b=(char)('A'+row-2);
+//          for(int col=2;col<=row;col++)
+//          {
+//              System.out.print(b);
+//              b--;
+//          }
+//            System.out.println();    
+//           }
+
+
+
+
+/*               ----Twenty Pattern----
+
+6 
+5 6 
+4 5 6 
+3 4 5 6 
+2 3 4 5 6 
+1 2 3 4 5 6 
+
+*/ 
               
+    // for(int row=1;row<=starNum;row++)
+    //   {
+    //       for(int col=(starNum+1)-row;col<=starNum;col++)
+    //       {
+    //           System.out.print(col+" ");
+    //       }
+    //           System.out.println();
+    //   }
+
+
+
+/*               ----Twenty-One Pattern----
+
+E 
+D E 
+C D E 
+B C D E 
+A B C D E
+        
+
+*/
+
+    // for(int row=1;row<=starNum;row++)
+    //   {
+    //        for(char col=(char)('A'+starNum-row);col<=(char)('A'+starNum-1);col++)
+    //        {
+    //            System.out.print(col+" ");
+    //        }
+    //        System.out.println();
+    //   }
+
+
+
+/*               ----Twenty-Two Pattern----
+
+                 
+        
+
+*/
+for(int row=1;row<=starNum;row++)
+                 {
+                  for(int col=1;col<=starNum;col++)
+                  {
+                   if(row==1 || row==starNum || col==1 || col==starNum )
+                   {
+                    System.out.print("*");
+                   }
+                   else
+                   {
+                    System.out.print(" ");
+                   }
+                   
+                  }
+                  System.out.println();
+                 }
     
-
-
-
 
  
 
