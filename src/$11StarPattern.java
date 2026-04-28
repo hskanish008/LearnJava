@@ -601,23 +601,27 @@ A B C D E
 
 /*               ----Twenty-Three Pattern----
 
-              
+1
+11
+121
+1331
+
 
 */
   
-        int num=1;
+    //     int num=1;
         
-       for(int row=1;row<=starNum;row++)
-       {
+    //    for(int row=1;row<=starNum;row++)
+    //    {
            
-          for(int col=row;col<=row;col++)
-          {
+    //       for(int col=row;col<=row;col++)
+    //       {
               
-              System.out.print(num);
-              num*=11;
-          }
-          System.out.println();
-       }
+    //           System.out.print(num);
+    //           num*=11;
+    //       }
+    //       System.out.println();
+    //    }
 
 
 
