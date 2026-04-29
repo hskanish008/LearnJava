@@ -189,6 +189,12 @@ So, if you need both the position (index) of each element and its value, a regul
             // }
 
 
+
+
+
+//    To demonstrate a practical example of using arrays, let's create a program that calculates the average of different ages:
+
+
     int[] numbers1={10,20,30,40,50,60};
         float sum1=0,avg;
         int num1=numbers1.length;
@@ -201,9 +207,137 @@ So, if you need both the position (index) of each element and its value, a regul
         System.out.println("The average of total string is = "+avg);
 
 
+//    And in this example, we create a program that finds the lowest age among different ages:
+
+
+    //     int ages[] = {20,22,35,48,36,87,19,70};
+     
+    //  int length=ages.length;
+     
+    //  int lowestAge=ages[0];
+     
+    //  for(int i=0;i<length;i++)
+    //  {
+    //      if(lowestAge>ages[i])
+    //      {
+    //         lowestAge=ages[i];
+    //      }
+    //      else
+    //      {
+    //         continue;
+    //      }
+    //  }
+        
+    //     System.out.println("The lowest age is = "+lowestAge);  
+    
     
 
 
+
+//      Create a program with a list of numbers where you want to skip negative values, but stop completely if you find a zero:
+
+    //  int[] numbers2={3,-1,7,4,0,9};
+    // int length=numbers2.length;
+    
+    //   for( int i=0;i<length;i++)
+    // {
+    //     if(numbers2[i]<0)
+    //     {
+    //         continue;
+    //     }
+    //     if(numbers2[i]==0)
+    //     {
+    //          break;
+    //     }
+       
+    //   System.out.println(numbers2[i]);  
+    // }
+
+
+//    Create a program that keeps track of the highest and lowest values in an array:
+
+    int[] numbers3={98,45,12,33,27};
+    
+    int length=numbers3.length;
+    
+    int max=numbers3[0];
+    int min=numbers3[0];
+    
+    
+    for(int i=0;i<length;i++)
+    {
+        if(numbers3[i]>max)
+        {
+            max=numbers3[i];
+            
+        }
+        
+        if(numbers3[i]<min)
+        {
+            min=numbers3[i];
+            
+        }
+       
+        
+    }
+    System.out.println("The maximum value is ="+max);
+    System.out.println("The minimum value is ="+min);
+
+
+/*
+          ----Java Multi-Dimensional Arrays----
+    
+          Multidimensional Arrays
+A multidimensional array is an array that contains other arrays.
+
+You can use it to store data in a table with rows and columns.
+
+To create a two-dimensional array, write each row inside its own curly braces:
+
+int[][] myNumbers = { {1, 4, 2}, {3, 6, 8} };
+Here, myNumbers has two arrays (two rows):
+
+First row: {1, 4, 2}
+Second row: {3, 6, 8}
+Think of it like this:
+
+
+
+Access Elements
+To access an element of a two-dimensional array, you need two indexes: the first for the row, and the second for the column.
+
+Remember: Array indexes start at 0. That means row 0 is the first row, and column 0 is the first column. (So row index 1 is the second row, and column index 2 is the third column.)
+
+This statement accesses the element in the second row (index 1) and third column (index 2) of the myNumbers array:
+    
+
+ */
+
+   int[][] numbers4={{1,4,2},{3,6,8}};
+   System.out.println(numbers4[1][2]);
+    
+
+/*
+
+Change Element Values
+You can overwrite an existing element using the same two-index notation (row, then column):
+ */
+
+int[][] myNumbers = { {1, 4, 2}, {3, 6, 8} };
+myNumbers[1][2] = 9;
+System.out.println(myNumbers[1][2]); 
+
+/*
+
+Rows and Columns (Lengths)
+You can use length to get the number of rows, and myNumbers[row].length for the number of columns in a given row:
+ */
+
+int[][] numbers5={{1,3,4,5,6},{1,5,6,7,8,9,8}};
+ 
+System.out.println("Rows :"+numbers5.length);
+System.out.println("Cols in row 0 has :"+numbers5[0].length);
+System.out.println("Cols in row 1 has :"+numbers5[1].length);
 
 
     
