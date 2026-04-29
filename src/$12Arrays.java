@@ -172,6 +172,40 @@ The following example uses a for-each loop to print all elements in the cars arr
 //        System.out.println(n);
 //    }
 
+
+
+/*
+    This means: for each String in the cars array (here called car), print its value.
+
+Compared to a regular for loop, the for-each loop is easier to write and read because it does not need a counter (like i < cars.length). However, it only gives you the values, not their positions (indexes) in the array.
+
+So, if you need both the position (index) of each element and its value, a regular for loop is the right choice. For example, when printing seat numbers in a theater row, you need to show both the seat number (the index) and who is sitting there (the value):
+ */
+
+            //  String[] seats={"Hritik","Naveen","Aman","Sandeep","Rajan"};
+            //  for(int seat=0;seat<seats.length;seat++)
+            // {
+            //   System.out.println(" The seat no is "+ seat +".The name of the person is :"+seats[seat]);
+            // }
+
+
+    int[] numbers1={10,20,30,40,50,60};
+        float sum1=0,avg;
+        int num1=numbers1.length;
+        
+        for(int i=0;i<numbers1.length;i++)
+        {
+            sum1+=numbers1[i];
+        }
+        avg=sum1/num1;
+        System.out.println("The average of total string is = "+avg);
+
+
+    
+
+
+
+
     
 
 
