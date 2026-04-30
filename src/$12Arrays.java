@@ -339,13 +339,13 @@ int[][] numbers5={{1,3,4,5,6},{1,5,6,7,8,9,8}};
 // System.out.println("Cols in row 0 has :"+numbers5[0].length);
 // System.out.println("Cols in row 1 has :"+numbers5[1].length);
 
-for(int row=0;row<numbers5.length;row++)
-{
-    for(int col=0;col<numbers5[row].length;col++)
-    {
-        System.out.println(numbers5[row][col]);
-    }
-}
+// for(int row=0;row<numbers5.length;row++)
+// {
+//     for(int col=0;col<numbers5[row].length;col++)
+//     {
+//         System.out.println(numbers5[row][col]);
+//     }
+// }
 
 int[][] myNumbers6 = { {1, 4, 2}, {3, 6, 8, 5, 2} };
 
@@ -354,6 +354,16 @@ for (int[] row : myNumbers6) {
     System.out.println(num);
   }
 }
+
+
+      String[][] carrs={{"Mercedes","Bmw","Range Rover"},{"Suzuki","skoda","Tata"}};
+     for(String row[] : carrs)
+     {
+      for(String car : row)  
+      {
+     System.out.println(car);    
+      }
+     }
 
 
 
