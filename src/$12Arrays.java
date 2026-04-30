@@ -347,6 +347,14 @@ for(int row=0;row<numbers5.length;row++)
     }
 }
 
+int[][] myNumbers6 = { {1, 4, 2}, {3, 6, 8, 5, 2} };
+
+for (int[] row : myNumbers6) {
+  for (int num : row) {
+    System.out.println(num);
+  }
+}
+
 
 
     
