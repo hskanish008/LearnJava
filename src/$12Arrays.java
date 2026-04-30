@@ -297,7 +297,7 @@ To create a two-dimensional array, write each row inside its own curly braces:
 int[][] myNumbers = { {1, 4, 2}, {3, 6, 8} };
 Here, myNumbers has two arrays (two rows):
 
-First row: {1, 4, 2}
+First row:  {1, 4, 2}
 Second row: {3, 6, 8}
 Think of it like this:
 
@@ -335,9 +335,18 @@ You can use length to get the number of rows, and myNumbers[row].length for the 
 
 int[][] numbers5={{1,3,4,5,6},{1,5,6,7,8,9,8}};
  
-System.out.println("Rows :"+numbers5.length);
-System.out.println("Cols in row 0 has :"+numbers5[0].length);
-System.out.println("Cols in row 1 has :"+numbers5[1].length);
+// System.out.println("Rows :"+numbers5.length);
+// System.out.println("Cols in row 0 has :"+numbers5[0].length);
+// System.out.println("Cols in row 1 has :"+numbers5[1].length);
+
+for(int row=0;row<numbers5.length;row++)
+{
+    for(int col=0;col<numbers5[row].length;col++)
+    {
+        System.out.println(numbers5[row][col]);
+    }
+}
+
 
 
     
