@@ -44,16 +44,72 @@ The following example has a method that takes a String called fname as parameter
 
 Multiple Parameters
  */
-      static void myMethod(String fname,int age)
-    {
-        System.out.println(fname +" Sharma and My age is :"+age);
-    }
-    public static void main(String[] args) {
-        myMethod("Hritik",24);
-        myMethod("Sachin",29);
-        myMethod("Avinash",39);
+    //   static void myMethod(String fname,int age)
+    // {
+    //     System.out.println(fname +" Sharma and My age is :"+age);
+    // }
+    // public static void main(String[] args) {
+    //     myMethod("Hritik",24);
+    //     myMethod("Sachin",29);
+    //     myMethod("Avinash",39);
         
-    }
+    // }
+
+
+// Check age through methods
+
+// static void checkAge(int age)
+//    {
+//        if(age<18)
+//        {
+//            System.out.println("Access denied the person is not eligible");
+//            System.out.println("Minimum Age required is Eighteen and your age is :"+age);
+//        }
+//        else
+//        {
+//            System.out.println("Access Granted , You are eligible for vote");
+//        }
+       
+    
+//    }
+//     public static void main(String args[])
+//      {
+//          checkAge(17);
+//          checkAge(19);
+//          checkAge(18);
+         
+//      }
+
+
+//  How to use Return
+
+// static int myMethod(int x)
+// {
+//     return 6+x;
+// }
+
+// public static void main(String args[])
+// {
+//     System.out.println(myMethod(7));
+// }
+
+
+
+static int myMethod(int x,int y)
+{
+    return x+y;
+}
+
+public static void main(String args[])
+{
+    // int z=myMethod(4,5);
+    System.out.println(myMethod(5,6));
+}
+
+
+
+
+
 
     
 }
