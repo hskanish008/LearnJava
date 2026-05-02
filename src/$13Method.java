@@ -95,16 +95,70 @@ Multiple Parameters
 
 
 
-static int myMethod(int x,int y)
-{
-    return x+y;
-}
+// static int myMethod(int x,int y)
+// {
+//     return x+y;
+// }
 
-public static void main(String args[])
-{
-    // int z=myMethod(4,5);
-    System.out.println(myMethod(5,6));
-}
+// public static void main(String args[])
+// {
+//     int z=myMethod(4,5);
+//     System.out.println(z);
+// }
+
+
+/*
+Here is a simple and fun "game example" using a method that returns a value, to show the double of the numbers 1 through 5 (using a for loop):
+
+ */
+
+
+    //     static int myDouble(int x)
+    // {
+    //     return x*2;
+    // }
+    // public static void main(String args[])
+    // {
+    //     for(int i=1;i<=5;i++)
+    //     {
+    //         System.out.println("Double of "+i +" is "+myDouble(i));
+    //     }
+    // }
+
+
+/*
+   ----Java Method Overloading----
+
+Method Overloading
+With method overloading multiple methods can have the same name with d/f parameters:
+int myMethod(int x)
+float myMethod(float x)
+double myMethod(double x, double y)
+
+*/
+
+
+static int myMethod(int x, int y)
+   {
+       return x+y;
+   }
+   static double myMethod(double x,double y)
+   {
+       return x+y;
+   }
+   
+   public static void main(String args[])
+   {
+       int mynum1=myMethod(67,43);
+       double mynum2=myMethod(56.78,45.67);
+       
+       System.out.println("Int : "+mynum1);
+       System.out.println("double : "+mynum2);
+   }
+
+ 
+
+
 
 
 
