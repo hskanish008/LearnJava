@@ -135,26 +135,39 @@ int myMethod(int x)
 float myMethod(float x)
 double myMethod(double x, double y)
 
+Instead of defining two methods that should do the same thing , it is better to overload one. In the example below, we overload the plusmethod method to work for both int and doubl
+
 */
 
 
-static int myMethod(int x, int y)
-   {
-       return x+y;
-   }
-   static double myMethod(double x,double y)
-   {
-       return x+y;
-   }
+// static int myMethod(int x, int y)
+//    {
+//        return x+y;
+//    }
+//    static double myMethod(double x,double y)
+//    {
+//        return x+y;
+//    }
    
+//    public static void main(String args[])
+//    {
+//        int mynum1=myMethod(67,43);
+//        double mynum2=myMethod(56.78,45.67);
+       
+//        System.out.println("Int : "+mynum1);
+//        System.out.println("double : "+mynum2);
+//    }
+
+
+   static void mymethod(int a,int b)
+   {
+    System.out.println(a+b);
+   }
    public static void main(String args[])
    {
-       int mynum1=myMethod(67,43);
-       double mynum2=myMethod(56.78,45.67);
-       
-       System.out.println("Int : "+mynum1);
-       System.out.println("double : "+mynum2);
+    mymethod(4,5);
    }
+
 
  
 
