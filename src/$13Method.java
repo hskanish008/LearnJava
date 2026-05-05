@@ -159,15 +159,17 @@ Instead of defining two methods that should do the same thing , it is better to 
 //    }
 
 
-   static void mymethod(int a,int b)
+   static int mymethod2(int a, int b)
    {
-    System.out.println(a+b);
-   }
-   public static void main(String args[])
-   {
-    mymethod(4,5);
-   }
+       return a*b;
 
+   }
+  
+   public static void main(String[] args)
+   {
+      int c=mymethod2(51,10);
+      System.out.println(c);    
+   }
 
  
 
