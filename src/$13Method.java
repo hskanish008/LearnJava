@@ -159,18 +159,28 @@ Instead of defining two methods that should do the same thing , it is better to 
 //    }
 
 
-   static int mymethod2(int a, int b)
-   {
-       return a*b;
+   // static int mymethod2(int a, int b)
+   // {
+   //     return a*b;
 
-   }
+   // }
   
+   // public static void main(String[] args)
+   // {
+   //    int c=mymethod2(51,10);
+   //    System.out.println(c);    
+   // }
+
+
+   static void mymethod3(int a, int b)
+   {
+      System.out.println("Subtraction: " + (a - b));
+   }
+   
    public static void main(String[] args)
    {
-      int c=mymethod2(51,10);
-      System.out.println(c);    
+      mymethod3(67, 12);
    }
-
  
 
 
