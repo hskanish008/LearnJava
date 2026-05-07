@@ -208,25 +208,44 @@ Instead of defining two methods that should do the same thing , it is better to 
          
    // }
 
-   static int  mymethod6(int age)
-   {
-      if(age>18)
-      {
-         System.out.println("The person is eligible for vote :"+age);
 
+// The person is eligible for vote without void .
+
+   // static int  mymethod6(int age)
+   // {
+   //    if(age>=18)
+   //    {
+   //       System.out.println("The person is eligible for vote :"+age);
+
+   //    }
+   //    else
+   //    {
+   //       System.out.println("The person is not eligible for vote :"+age);
+   //    }
+   //    return age;
+   // }
+  
+   // public static void main(String args[])
+   // {
+   //    mymethod6(18);
+   // }
+
+   static void mymethod7(int age)
+   {
+      if(age>=18)
+      {
+         System.out.println("The Person is eligible for vote.");
       }
       else
       {
-         System.out.println("The person is not eligible for vote :"+age);
-      }
-      return age;
+         System.out.println("The Person is not eligible for vote.");
+      }   
    }
   
    public static void main(String args[])
    {
-      mymethod6(18);
+      mymethod7(17);
    }
-
    
 
    
