@@ -172,16 +172,66 @@ Instead of defining two methods that should do the same thing , it is better to 
    // }
 
 
-   static void mymethod3(int a, int b)
-   {
-      System.out.println("Subtraction: " + (a - b));
-   }
+   // static void mymethod3(int a, int b)
+   // {
+   //    System.out.println("Subtraction: " + (a - b));
+   // }
    
-   public static void main(String[] args)
+   // public static void main(String[] args)
+   // {
+   //    mymethod3(67, 12);
+   // }
+
+   // static void mymethod5(int a, int b)
+   // {
+   //      System.out.println("Substraction : "+(a-b));  
+   // }
+   
+   // public static void main(String[] args)
+   // {
+   //    mymethod5(10,5);
+   // }
+
+   // static void mymethod4() 
+   // {
+   //       int numbers=5;
+
+   //       for(int row=1;row<=numbers;row++)
+   //       {
+   //          for(int col=1;col<=row;col++)
+   //          {
+   //             System.out.print(numbers);
+   //          }
+   //          System.out.println();
+   //       }
+       
+         
+   // }
+
+   static int  mymethod6(int age)
    {
-      mymethod3(67, 12);
+      if(age>18)
+      {
+         System.out.println("The person is eligible for vote :"+age);
+
+      }
+      else
+      {
+         System.out.println("The person is not eligible for vote :"+age);
+      }
+      return age;
    }
- 
+  
+   public static void main(String args[])
+   {
+      mymethod6(18);
+   }
+
+   
+
+   
+
+
 
 
 
